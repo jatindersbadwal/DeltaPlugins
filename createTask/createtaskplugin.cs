@@ -10,7 +10,7 @@ using System.ServiceModel;
 
 namespace createTask
 {
-    class createtaskplugin : IPlugin
+    public class createtaskplugin : IPlugin
     {
         public void Execute(IServiceProvider serviceProvider)
         {
