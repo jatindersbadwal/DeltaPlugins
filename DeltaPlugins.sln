@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "createAppointment", "create
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "createManyToManyRel", "createManyToManyRelationship\createManyToManyRel.csproj", "{29E32A42-AC4D-4739-B9EA-9DA5375435C4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "contactDuplicateDetection", "contactDuplicateDetection\contactDuplicateDetection.csproj", "{475CC37B-F7BB-409A-B620-EF2975ADE024}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "contactDuplicateFindFetchXML", "contactDuplicateFindFetchXML\contactDuplicateFindFetchXML.csproj", "{FF44CE07-81FD-4310-8A86-829638DA7638}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{29E32A42-AC4D-4739-B9EA-9DA5375435C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{29E32A42-AC4D-4739-B9EA-9DA5375435C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{29E32A42-AC4D-4739-B9EA-9DA5375435C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{475CC37B-F7BB-409A-B620-EF2975ADE024}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{475CC37B-F7BB-409A-B620-EF2975ADE024}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{475CC37B-F7BB-409A-B620-EF2975ADE024}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{475CC37B-F7BB-409A-B620-EF2975ADE024}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF44CE07-81FD-4310-8A86-829638DA7638}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF44CE07-81FD-4310-8A86-829638DA7638}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF44CE07-81FD-4310-8A86-829638DA7638}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF44CE07-81FD-4310-8A86-829638DA7638}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
