@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "contactDuplicateDetection",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "contactDuplicateFindFetchXML", "contactDuplicateFindFetchXML\contactDuplicateFindFetchXML.csproj", "{FF44CE07-81FD-4310-8A86-829638DA7638}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bingMapsCoordinates", "bingMapsCoordinates\bingMapsCoordinates.csproj", "{8C653358-7681-49D2-A3E5-EB1A300A96E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "saveOldContactName", "saveOldContactName\saveOldContactName.csproj", "{FDB4FCA9-E45A-4A3D-AE41-DBA6790F522D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{FF44CE07-81FD-4310-8A86-829638DA7638}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF44CE07-81FD-4310-8A86-829638DA7638}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF44CE07-81FD-4310-8A86-829638DA7638}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C653358-7681-49D2-A3E5-EB1A300A96E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C653358-7681-49D2-A3E5-EB1A300A96E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C653358-7681-49D2-A3E5-EB1A300A96E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C653358-7681-49D2-A3E5-EB1A300A96E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDB4FCA9-E45A-4A3D-AE41-DBA6790F522D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDB4FCA9-E45A-4A3D-AE41-DBA6790F522D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDB4FCA9-E45A-4A3D-AE41-DBA6790F522D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDB4FCA9-E45A-4A3D-AE41-DBA6790F522D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

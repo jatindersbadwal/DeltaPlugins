@@ -235,7 +235,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="contactDuplicateDetection.cs" />
+    <Compile Include="contactFilteredDuplicateDetection.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
