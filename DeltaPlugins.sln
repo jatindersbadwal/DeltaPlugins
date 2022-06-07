@@ -17,6 +17,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bingMapsCoordinates", "bing
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "saveOldContactName", "saveOldContactName\saveOldContactName.csproj", "{FDB4FCA9-E45A-4A3D-AE41-DBA6790F522D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fieldLengthValidation", "..\fieldLengthValidation\fieldLengthValidation\fieldLengthValidation.csproj", "{CB25D9E2-1AC3-460E-9290-BA58DD44DEFF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "latestPhoneCallChecker", "ConsoleApp1\latestPhoneCallChecker.csproj", "{6B3DB2B8-FB09-4849-A3CA-93508F23F8F7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +55,14 @@ Global
 		{FDB4FCA9-E45A-4A3D-AE41-DBA6790F522D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FDB4FCA9-E45A-4A3D-AE41-DBA6790F522D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FDB4FCA9-E45A-4A3D-AE41-DBA6790F522D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB25D9E2-1AC3-460E-9290-BA58DD44DEFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB25D9E2-1AC3-460E-9290-BA58DD44DEFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB25D9E2-1AC3-460E-9290-BA58DD44DEFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB25D9E2-1AC3-460E-9290-BA58DD44DEFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B3DB2B8-FB09-4849-A3CA-93508F23F8F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B3DB2B8-FB09-4849-A3CA-93508F23F8F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B3DB2B8-FB09-4849-A3CA-93508F23F8F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B3DB2B8-FB09-4849-A3CA-93508F23F8F7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

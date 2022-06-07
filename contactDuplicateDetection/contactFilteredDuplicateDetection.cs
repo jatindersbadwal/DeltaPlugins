@@ -76,6 +76,7 @@ namespace contactFilteredDuplicateDetection
                                 service.Update(updContact);
                             }
                     };
+                               
                 }
                 catch (Exception ex)
                 {
