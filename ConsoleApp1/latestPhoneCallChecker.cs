@@ -48,7 +48,7 @@ namespace latestPhoneCallChecker
                         DateTime firstCallContact;
                         DateTime latestCallContact;
                         DateTime ActualPhoneCall;
-                        //  if (string.IsNullOrEmpty(entity.GetAttributeValue<string>("new_firstphonecall")))
+                        
                         if (!(contact.Attributes["new_firstphonecall"].Equals(null)))
                         {
                             firstCallContact = (DateTime)contact.Attributes["new_firstphonecall"];

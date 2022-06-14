@@ -8,23 +8,20 @@ using System.Text.Json.Serialization;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using bingMapsModel;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
-//using BingMapsRESTToolkit;
 
 namespace bingMapsCoordinates
 {
-   public class Program
+    public class Program
     {
         static void Main(string[] args)
         {
             RunAsync().Wait();
             Console.ReadLine();
         }
-        static async Task RunAsync()
+        async static Task RunAsync()
         {
             Console.WriteLine("\tSEARCH ADDRESS......");
-           // String addressLine = "84 stillman dr";
+            // String addressLine = "84 stillman dr";
             String addressLine = Console.ReadLine();
             String bingMapsKey = "AsrOHOrxfF61RlwaErE1SLmuf1UktNSyrtMkYQkJNeph25nkbDg6IoMlI3RuKON_";
             using (var client = new HttpClient())
@@ -34,27 +31,19 @@ namespace bingMapsCoordinates
                 client.DefaultRequestHeaders.Accept.Clear();
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
                 Console.WriteLine("\tGETTING ADDRESS......");
-                HttpResponseMessage response = await client.GetAsync("REST/v1/Locations?addressLine="+ addressLine + "&maxResults=1 &key="+bingMapsKey);
+                HttpResponseMessage response = await client.GetAsync("REST/v1/Locations?addressLine=" + addressLine + "&maxResults=5 &key=" + bingMapsKey);
                 if (response.IsSuccessStatusCode)
-                {                   
+                {
                     var getResponseString = await response.Content.ReadAsStringAsync();
                     //var getResponse = await response.Content.ReadAsAsync<Address>();
-                    dynamic JSONaddress = JsonConvert.DeserializeObject(getResponseString);
+                    Root JSONaddress = JsonSerializer.Deserialize<Root>(getResponseString);
                     // dynamic data = JSONaddress; 
-                    foreach (var data in JSONaddress.resourceSets)
-                    {
-                        foreach (var data1 in data.resources)
-                        {
-                            foreach (String address in data1.address)
-                            {
-                                Console.WriteLine(address);
-                            };
-                            foreach (String coordinates in data1.geocodePoints[0].coordinates)
-                            {
-                               Console.WriteLine(coordinates);                               
-                            };                    
-                        }
-                    }
+
+                    var formatAddress = JSONaddress.resourceSets[0].resources[0].address.formattedAddress;
+                    var formatLatitude = JSONaddress.resourceSets[0].resources[0].geocodePoints[0].coordinates[0];
+                    var formatLongitude = JSONaddress.resourceSets[0].resources[0].geocodePoints[0].coordinates[1];
+                    Console.WriteLine(formatAddress+"\n");
+                    Console.WriteLine(formatLatitude + ", "+ formatLongitude);
                 }
             }
         }
